@@ -36,6 +36,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-transform: capitalize;
   letter-spacing: 2px;
   color: var(--primaryColor);
@@ -45,7 +46,38 @@ section#home {
   background-size: cover;
 }
 
-section#home a {
+.social-icons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.social-icons a {
+  text-decoration: none;
+}
+.fab,
+.fa {
+  font-size: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.fab:hover,
+.fa:hover {
+  color: rgb(0, 225, 255);
+}
+.social-icons a p {
+  display: none;
+  margin-right: 50px;
+}
+
+.social-icons a:hover p {
+  display: block;
+  font-size: 2rem;
+  color: rgb(0, 225, 255);
+}
+
+#myLogo {
   position: absolute;
   z-index: 2;
   top: 1.5rem;
@@ -56,6 +88,7 @@ section#home a {
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
 }
+
 section#about {
   background-color: var(--navColor2);
 }
